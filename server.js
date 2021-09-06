@@ -43,6 +43,12 @@ function filterByQuery(query, animalsArray) {
     return filteredResults;
 }
 
+// this function takes in the id and array of animals and returns an animal object:
+function findById(id, animalsArray) {
+    const result = animalsArray.filter(animal => animal.id === id)[0];
+    return result;
+}
+
 // this is a motherfucking route addition:::::
 app.get('/api/animals', (req, res) => {
     // access the query property on the req object
@@ -51,6 +57,16 @@ app.get('/api/animals', (req, res) => {
         results = filterByQuery(req.query, results);
     }
     res.json(results);
+});
+
+// add a get route using the req.params property method to access the parameter object:
+app.get('/api/animals/:id', (req, res) => {
+    const result = findById(req.params.id, animals);
+    if (ressult) {
+        res.json(result);
+    } else {
+        res.send(404);
+    }
 });
 
 app.listen(PORT, () => {
