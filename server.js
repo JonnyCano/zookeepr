@@ -62,7 +62,7 @@ app.get('/api/animals', (req, res) => {
 // add a get route using the req.params property method to access the parameter object:
 app.get('/api/animals/:id', (req, res) => {
     const result = findById(req.params.id, animals);
-    if (ressult) {
+    if (result) {
         res.json(result);
     } else {
         res.send(404);
