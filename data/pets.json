@@ -1,0 +1,124 @@
+{
+    "pets": [
+      {
+        "id": "0",
+        "name": "Spindle",
+        "species": "bear",
+        "diet": "carnivore",
+        "personalityTraits": [
+          "hungry",
+          "zany",
+          "loving"
+        ],
+        "petId": "12345"
+      },
+      {
+        "id": "1",
+        "name": "Terry",
+        "species": "gorilla",
+        "diet": "omnivore",
+        "personalityTraits": [
+          "anxious",
+          "goofy"
+        ],
+        "petId": "84763"
+      },
+      {
+        "id": "2",
+        "name": "Erica",
+        "species": "gorilla",
+        "diet": "omnivore",
+        "personalityTraits": [
+          "quirky",
+          "rash"
+        ],
+        "petId": "54321"
+      },
+      {
+        "id": "3",
+        "name": "Noel",
+        "species": "bear",
+        "diet": "carnivore",
+        "personalityTraits": [
+          "impish",
+          "sassy",
+          "brave"
+        ],
+        "petId": "67890"
+      },
+      {
+        "id": "4",
+        "name": "Coco",
+        "species": "penguin",
+        "diet": "herbivore",
+        "personalityTraits": [
+          "loving",
+          "goofy"
+        ],
+        "petId": "09876"
+      },
+      {
+        "id": "5",
+        "name": "Marcy",
+        "species": "ostrich",
+        "diet": "herbivore",
+        "personalityTraits": [
+          "hungry",
+          "goofy"
+        ],
+        "petId": "76543"
+      },
+      {
+        "id": "6",
+        "name": "Bodhi",
+        "species": "Doggo",
+        "diet": "herbivore",
+        "personalityTraits": [
+          "zany"
+        ],
+        "petId": "13579"
+      },
+      {
+        "id": "7",
+        "name": "Cassie",
+        "species": "Doggo",
+        "diet": "herbivore",
+        "personalityTraits": [
+          "hungry",
+          "zany",
+          "goofy"
+        ],
+        "petId": "87639"
+      },
+      {
+        "id": "8",
+        "name": "Roxy",
+        "species": "Quokka",
+        "diet": "herbivore",
+        "personalityTraits": [
+          "loving"
+        ],
+        "petId": "28374"
+      },
+      {
+        "id": "9",
+        "name": "Tamara",
+        "species": "Tiger",
+        "diet": "carnivore",
+        "personalityTraits": [
+          "hungry"
+        ],
+        "petId": "90374"
+      },
+      {
+        "name": "Sufjan",
+        "species": "Koala Bear",
+        "diet": "herbivore",
+        "personalityTraits": [
+          "loving"
+        ],
+        "id": "10",
+        "petId": "83640"
+      }
+    ]
+  }

@@ -1,8 +1,16 @@
 const express = require('express');
+// change the port variable to something that can run on ports that are hosted by other environments
+// like heroku that run on 80 or 443
 const PORT = process.env.PORT || 3001;
 // instantiate the server:
 const app = express();
 const { animals } = require('./data/animals');
+
+// Middleware: use is a method that mounts a function to the server that our requests will pass through before getting to the intended endpoint
+// parse incoming string or array data
+app.use(express.urlencoded({ extended: true }));
+// parse incoming JSON data
+app.use(express.json());
 
 function filterByQuery(query, animalsArray) {
     let personalityTraitsArray = [];
@@ -49,7 +57,16 @@ function findById(id, animalsArray) {
     return result;
 }
 
-// this is a motherfucking route addition:::::
+// this function creates a new animal:
+function createNewAnimal(body, animalsArray) {
+    console.log(body);
+    // our function's main code will go here!
+
+    // return finished code to post route for response
+    return body;
+}
+
+// this is a route for a get request:
 app.get('/api/animals', (req, res) => {
     // access the query property on the req object
     let results = animals;
@@ -67,6 +84,13 @@ app.get('/api/animals/:id', (req, res) => {
     } else {
         res.send(404);
     }
+});
+
+// define a route that handles a POST request:
+app.post('/api/animals', (req, res) => {
+    // req.body is where our incoming content will be
+    console.log(req.body);
+    res.json(req.body);
 });
 
 app.listen(PORT, () => {

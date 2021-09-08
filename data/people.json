@@ -1,0 +1,39 @@
+{
+    "people": [
+        {
+            "firstname": "Serena",
+            "lastname": "Van Der Woodsen",
+            "email": "s@gmail.com",
+            "age": "30",
+            "petID": "12345"
+        },
+        {
+            "firstname": "Daniel",
+            "lastname": "Humphry",
+            "email": "lonelyBoy@gmail.com",
+            "age": "30",
+            "petID": "67890"
+        },
+        {
+            "firstname": "Blair",
+            "lastname": "Waldorf",
+            "email": "b@gmail.com",
+            "age": "29",
+            "petID": "13579"
+        },
+        {
+            "firstname": "Charles",
+            "lastname": "Bass",
+            "email": "chuck@gmail.com",
+            "age": "31",
+            "petID": "65432"
+        },
+        {
+            "firstname": "Nathaniel",
+            "lastname": "Archibald",
+            "email": "nate@gmail.com",
+            "age": "17",
+            "petID": "98765"
+        }
+    ]
+}
