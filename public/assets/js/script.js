@@ -1,5 +1,8 @@
 const $animalForm = document.querySelector('#animal-form');
 
+// this function gets called on form submission:
+//it gathers all of the form input data and packages it as an object to send to the getAnimals()
+//function as the formData argument
 const handleAnimalFormSubmit = event => {
     event.preventDefault();
 

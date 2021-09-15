@@ -84,7 +84,7 @@
     },
     {
       "id": "8",
-      "name": "Roxy",
+      "name": "Babe",
       "species": "Quokka",
       "diet": "herbivore",
       "personalityTraits": [
@@ -105,7 +105,8 @@
       "species": "Koala Bear",
       "diet": "herbivore",
       "personalityTraits": [
-        "loving"
+        "loving",
+        "scary"
       ],
       "id": "10"
     },
@@ -126,6 +127,17 @@
         "loving"
       ],
       "id": "12"
+    },
+    {
+      "name": "Marcy",
+      "species": "Ostrich",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "dumb",
+        "manipulative",
+        "darling"
+      ],
+      "id": "13"
     }
   ]
 }
