@@ -22,10 +22,7 @@ const printResults = resultArr => {
   $displayArea.innerHTML = animalHTML.join('');
 };
 
-// pass data from the getAnimals() function through the
-//Object.entries() method to create query parameters:
 const getAnimals = (formData = {}) => {
-  // assign a query for empty form:
   let queryUrl = '/api/animals?';
 
   Object.entries(formData).forEach(([key, value]) => {
@@ -34,8 +31,6 @@ const getAnimals = (formData = {}) => {
 
   console.log(queryUrl);
 
-  // this function(), if the ok property is 'ok' the response is true,
-  //will parse the response into readable JSON data:
   fetch(queryUrl)
     .then(response => {
       if (!response.ok) {
@@ -47,11 +42,8 @@ const getAnimals = (formData = {}) => {
       console.log(animalData);
       printResults(animalData);
     });
-
 };
 
-// on form submit, this function will gather all the form input data
-//and package it as an object to send to the getAnimals() function:
 const handleGetAnimalsSubmit = event => {
   event.preventDefault();
   const dietRadioHTML = $animalForm.querySelectorAll('[name="diet"]');
