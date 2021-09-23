@@ -5,6 +5,7 @@ const {
   createNewZookeeper,
   validateZookeeper
 } = require('../lib/zookeepers.js');
+const { zookeepers } = require("../data/zookeepers.js");
 
 jest.mock('fs');
 test('creates an zookeeper object', () => {
