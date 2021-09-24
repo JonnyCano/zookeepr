@@ -5,10 +5,10 @@ const {
   createNewZookeeper,
   validateZookeeper
 } = require('../lib/zookeepers.js');
-const { zookeepers } = require("../data/zookeepers.js");
+const { zookeepers } = require("../data/zookeepers");
 
 jest.mock('fs');
-test('creates an zookeeper object', () => {
+test('creates a zookeeper object', () => {
   const zookeeper = createNewZookeeper({ name: 'Darlene', id: 'jhgdja3ng2' }, []);
 
   expect(zookeeper.name).toBe('Darlene');
