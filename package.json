@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon test.js",
+    "test": "jest",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/JonnyCano/zookeepr#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^27.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
